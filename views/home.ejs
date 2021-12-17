@@ -1,0 +1,23 @@
+<%- include("partials/header"); %>
+
+    <h1>Welcome to BBC HOME</h1>
+
+    <%  tabNewsHTML.forEach(function(item) {     %>
+
+        <div class="home__news">
+            <a href="/<%=  item.title   %>" class="home__news-mid">
+                <p class="home__tab"><%=  item.tabName   %></p>
+                <h2 class="home__title"><%=  item.title   %></h2>
+                <p class="home__news-text"><%=   item.newsText.substring(0,200) + "  ..." %>  </p>
+            </a>
+        </div>
+
+    <%  })     %>
+    
+    
+
+    
+
+
+
+<%- include("partials/footer"); %>

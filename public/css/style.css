@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+/* ======   Navigation    ===== */
+.navigation {
+    background-color: yellowgreen;
+    padding: 1em;
+}
+
+/* nav */
+.nav {
+    /* background-color: yellow; */
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    margin-right: 2em;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logo span {
+    padding: .2em;
+    background-color: #fff;
+    border-radius: .2em;
+}
+
+/* Nav links */
+.nav-links {
+    /* background-color: rgb(179, 248, 248); */
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a {
+    display: block;
+    padding: .5em 1em;
+    border-right: 1px solid rgb(119, 118, 118);
+}
+
+/* search */
+.search input{
+    outline: none;
+    border: 1px solid rgb(199, 196, 196);
+    display: block;
+    padding: .5em 1em;
+}
+
+
+
+/* ====   Footer    ======= */
+footer {
+    /* worked bcoz of flexbox */
+    margin-top: auto;    
+    text-align: center;
+    background-color: gray;
+    padding: 1em;
+}
+
+
+
+
+
+/*
+==================================================
+========== HOME PAGE =============================
+*/
+.home__news {
+    margin: 3em 0 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: 1fr;
+
+    /* background-color:tomato; */
+}
+
+.home__news-mid {
+    /* background-color: teal; */
+    padding: 2em;
+
+    border: 1px solid #e8e9ec;
+    grid-column: 2/3;
+}
+
+.home__tab {
+    text-transform: capitalize;
+}
+
+.home__title {
+    margin: 1em 0;
+
+}
+
+/*
+==================================================
+========== Tab News =============================
+*/
+.tabNews__mid h2{
+    font-size: 2em;
+}
+
+.tabNews__news-text {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
